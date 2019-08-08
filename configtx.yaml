@@ -360,6 +360,12 @@ Profiles:
             <<: *OrdererDefaults
             OrdererType: etcdraft
             EtcdRaft:
+                Options:
+                    TickInterval: 500ms
+                    ElectionTick: 10
+                    HeartbeatTick: 1
+                    MaxInflightBlocks: 5
+                    SnapshotIntervalSize: 20971520
                 Consenters:
                 - Host: orderer.example.com
                   Port: 7050
