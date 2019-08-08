@@ -398,7 +398,7 @@ COMPOSE_FILE_ORG3=docker-compose-org3.yaml
 # use golang as the default language for chaincode
 LANGUAGE=golang
 # default image tag
-IMAGETAG="1.1.0"
+IMAGETAG="1.4.2"
 # Parse commandline args
 if [ "$1" = "-m" ]; then # supports old usage, muscle memory is powerful!
   shift
