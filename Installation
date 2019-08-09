@@ -1,9 +1,17 @@
+
+# Installing pre-requisites : https://hyperledger.github.io/composer/latest/installing/installing-prereqs.html
+
+curl -O https://hyperledger.github.io/composer/latest/prereqs-ubuntu.sh
+
+chmod u+x prereqs-ubuntu.sh
+
+./prereqs-ubuntu.sh
+
+
+
 # Hyperledger Fabric bootstrap Installation
 
-wget https://raw.githubusercontent.com/hyperledger/fabric/master/scripts/bootstrap.sh
-chmod +x ./bootstrap.sh
-./bootstrap.sh
-
+curl -sSL http://bit.ly/2ysbOFE | bash -s
 
 
 # Golang Installation
